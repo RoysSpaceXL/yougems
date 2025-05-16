@@ -1,4 +1,4 @@
 # YouGems
 Setup of public website 
-This reository is hosted at:
+This repository is hosted at:  
 https://spacebubble.org/
