@@ -66,7 +66,7 @@ body{
         /*width: 20%;
         /*height: 80%;*/
         border: 5px solid green;
-        border-radius: 30px;   
+        border-radius: 10px;   
         background-color:rgb(151, 141, 141) ;
     }
 
@@ -116,5 +116,6 @@ VPSidebar[data-v-ef86de8e] {
 
 
 li {
-  margin-bottom: 0.5rem;
+    padding: 10%;
+    bottom: .5rem;
 }
