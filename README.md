@@ -1,11 +1,15 @@
 # YouGems
 - Setup of public website
+## 1 Hosting
 - This repository is hosted at:  
 https://spacebubble.org/
 The original repository is located at:
 https://github.com/RoysSpaceXL/YouGems
 https://roysspacexl.github.io/YouGems/   
 is out of order, to view the website, you can use the link above.
+## 2 Contact
+- If you have any questions, suggestions, or issues, please contact us at:
+    roysspacexl@spacebubble.org
 
 # 7 Configuring a subdomain
 To set up a www or custom subdomain, such as www.example.com or blog.example.com, you must add your domain in the repository settings. 
