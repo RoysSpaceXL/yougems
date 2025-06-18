@@ -9,7 +9,7 @@ body{
 
     }
     h1{
-        margin-top: 5px;
+        margin-top: 15px;
         margin-left: 19%;
         width: 61%;
         text-align: center;
@@ -25,6 +25,7 @@ body{
     }
 
     h3{
+        margin-top: 15px;
         margin-left: 19%;
         width: 61%;
         height: fit-content;        
@@ -421,7 +422,7 @@ body {
 
 /* Main Layout */
 .layout {
-    display: grid;
+    display: grid;border: 3px solid blue;
     grid-template-columns: var(--sidebar-width) 1fr var(--toc-width);
     grid-template-rows: 1fr;
     min-height: 100vh;
@@ -451,7 +452,7 @@ body {
 }
 
 .nav-section-title {
-    display: flex;
+    display: flex;border: 3px solid red;
     align-items: center;
     justify-content: space-between;
     font-size: 0.875rem;
@@ -514,18 +515,19 @@ body {
 
 /* Main Content */
 .content {
-    grid-column: 2;
+    grid-column: 2;display: block;border: 3px solid violet;
     padding: 2rem;
     max-width: none;
     overflow-x: hidden;
 }
 
 .article {
+    display: block;border: 3px solid green;
     max-width: 800px;
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h11, h12, h13, h14, h15, h16 {
     color: var(--text-primary);
     font-weight: 600;
     line-height: 1.25;
@@ -533,12 +535,12 @@ h1, h2, h3, h4, h5, h6 {
     scroll-margin-top: calc(var(--header-height) + 1rem);
 }
 
-h1 {
+h11 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
-h2 {
+h12 {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -546,12 +548,12 @@ h2 {
     border-bottom: 1px solid var(--border-color);
 }
 
-h3 {
+h13 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
 }
 
-h4 {
+h14 {
     font-size: 1.25rem;
     margin-top: 1.25rem;
 }
