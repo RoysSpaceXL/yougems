@@ -1,8 +1,8 @@
-/* Add smooth scrolling 
+/* Add smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
-*/
+
 /* Add scroll padding to account for fixed header */
 html {
     scroll-padding-top: 65px;
@@ -60,7 +60,6 @@ body{
         border: 3px solid greenyellow;
         padding: 5px;
         display: flex;
-       /* flex-flow: row;*/
         flex-flow: wrap;
         justify-content: space-around;
         }
@@ -134,7 +133,6 @@ body{
     --sidebar-width: 250px;
     --toc-width: 200px;
     --header-height: 65px; /* Make sure this matches your actual header height */
-    --mobile-breakpoint: 768px;
     --scroll-offset: calc(var(--header-height) + 5px); /* Add extra 20px buffer */
     
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -440,25 +438,17 @@ body {
 
 /* Main Layout */
 .layout {
-    display: grid;border: 3px solid blue;
-    grid-template-columns: var(--sidebar-width) 1fr var(--toc-width);
+    display: grid;
+    border: 3px solid blue;
+    grid-template-columns: 250px 1fr 200px;
     grid-template-rows: 1fr;
     min-height: 100vh;
-    padding-top: var(--header-height);
+    padding-top: 60px;
+    gap: 10px;
 }
 
 /* Ensure proper grid placement */
 .sidebar {
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    width: var(--sidebar-width);
-    height: calc(100vh - var(--header-height));
-    background-color: var(--surface-color);
-    border-right: 1px solid var(--border-color);
-    overflow-y: auto;
-    padding: 1.5rem 0;
-    z-index: 80;
     grid-column: 1;
     background: lightblue;
 }
@@ -860,11 +850,11 @@ a:focus {
     }
 }
 
-/* Alternative approach - add invisible spacer before each section 
+/* Alternative approach - add invisible spacer before each section */
 section[id]::before {
     content: '';
     display: block;
     height: var(--scroll-offset);
     margin-top: calc(-1 * var(--scroll-offset));
     visibility: hidden;
-}*/
+}

@@ -15,509 +15,674 @@
     <title>Index Docs Host YouGems 2Arcade</title>
 </head>
 <body>
+<h1>Github WebHost Documents Page of Yougems</h1>
+
 <div id="app">
-    <div class="Layout" data-v85="">
-        
-        <!-- Skip Link for Accessibility -->
-        <span tabindex="-1" data-v-0e06ef28=""></span>
-            <a href="https://mermaid.js.org/intro/#VPContent" class="VPSkipLink visually-hidden" data-v-0e06ef28="">
-                Skip to content
-            </a>
-        
-        <!-- Header Navigation -->
-        <header class="nav-header" id="header">
-            <div class="nav-container">
-                <div class="nav-brand">
-                    <img src="./samples/logo.svg" alt="Logo" class="logo">
-                    <span class="brand-text">My Docs</span>
-                </div>
-                
-                <!-- Search -->
-                <div class="search-container">
-                    <div class="search-box">
-                        <input type="text" id="search-input" placeholder="Search documentation..." aria-label="Search">
-                        <button class="search-btn" aria-label="Search">
-                            <svg width="20" height="20" viewBox="0 0 20 20">
-                                <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="search-results" id="search-results"></div>
-                </div>
-                
-                <!-- Main Navigation -->
-                <nav class="nav-menu" role="navigation" aria-label="Main navigation">
-                    <a href="#" class="nav-link active">Docs</a>
-                    <a href="#" class="nav-link">Tutorials</a>
-                    <a href="#" class="nav-link">Examples</a>
-                    <a href="#" class="nav-link">API</a>
-                </nav>
-                
-                <!-- Theme Toggle -->
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <span class="sun-icon">☀️</span>
-                    <span class="moon-icon">🌙</span>
-                </button>
-                
-                <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-
-                </button>
+    <!-- Header (outside grid) -->
+    <header class="nav-header" id="header">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="./samples/logo.svg" alt="Logo" class="logo">
+                <span class="brand-text">My Docs</span>
             </div>
-        </header>
-        <!-- Mobile Menu Overlay -->
-        <div class="mobile-overlay" id="mobile-overlay"></div>
-        <h1> Github WebHost Documents Page of Yougems</h1>
-        <h3> Added sidebar-aria-label and div containers to be always evenly left sided.<br> (Modification target: Layout web-design)</h3>
+            
+            <!-- Search -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search documentation..." aria-label="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20">
+                            <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-results" id="search-results"></div>
+            </div>
+            
+            <!-- Main Navigation -->
+            <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+                <a href="#" class="nav-link active">Docs</a>
+                <a href="#" class="nav-link">Tutorials</a>
+                <a href="#" class="nav-link">Examples</a>
+                <a href="#" class="nav-link">API</a>
+            </nav>
+            
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Main Grid Layout -->
+    <div class="layout">
+        <!-- Sidebar (Column 1) -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav" role="navigation" aria-label="Sidebar navigation">
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        📚 Getting Started
+                        <button class="nav-toggle" data-section="getting-started">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="getting-started">
+                        <li><a href="#introduction" class="nav-item active">Introduction</a></li>
+                        <li><a href="#installation" class="nav-item">Installation</a></li>
+                        <li><a href="#quick-start" class="nav-item">Quick Start</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        📔 Introduction
+                        <button class="nav-toggle" data-section="introduction-section">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="introduction-section">
+                        <!-- CHANGE FROM: href="./intro/About-Yougems.html" -->
+                        <!-- TO: anchor links -->
+                        <li><a href="#about-yougems" class="nav-item">About Yougems</a></li>
+                        <li><a href="#installation" class="nav-item">Getting Started</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        📊 Diagram Syntax
+                        <button class="nav-toggle" data-section="diagram-syntax">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="diagram-syntax">
+                        <!-- CHANGE ALL THESE TO ANCHOR LINKS -->
+                        <li><a href="#flowchart" class="nav-item">Flowchart</a></li>
+                        <li><a href="#sequence-diagram" class="nav-item">Sequence Diagram</a></li>
+                        <li><a href="#class-diagram" class="nav-item">Class Diagram</a></li>
+                        <li><a href="#packet" class="nav-item">Packet 🔥</a></li>
+                        <li><a href="#examples" class="nav-item">Other Examples</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        📚 Ecosystem
+                        <button class="nav-toggle" data-section="ecosystem">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="ecosystem">
+                        <li><a href="#yougems-chart" class="nav-item">Yougems Chart</a></li>
+                        <li><a href="#tutorials" class="nav-item">Tutorials</a></li>
+                        <li><a href="#integrations-community" class="nav-item">Integrations - Community</a></li>
+                        <li><a href="#integrations-create" class="nav-item">Integrations - Create</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        ⚙️ Configuration
+                        <button class="nav-toggle" data-section="config">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="config">
+                        <li><a href="#basic-config" class="nav-item">Basic Configuration</a></li>
+                        <li><a href="#advanced-config" class="nav-item">Advanced Settings</a></li>
+                        <li><a href="#themes" class="nav-item">Themes</a></li>
+                        <li><a href="#methods" class="nav-item">API Methods</a></li>
+                        <li><a href="#events" class="nav-item">Events</a></li>
+                        <li><a href="#properties" class="nav-item">Properties</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        🙌 Contributing
+                        <button class="nav-toggle" data-section="contributing">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="contributing">
+                        <li><a href="#contributing" class="nav-item">Getting Started</a></li>
+                        <li><a href="#security" class="nav-item">Security</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        📰 Latest News
+                        <button class="nav-toggle" data-section="news">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="news">
+                        <li><a href="#announcements" class="nav-item">Announcements</a></li>
+                        <li><a href="#blog" class="nav-item">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
         
-        <section>
-            <!-- Main Layout -->
-            <main class="content" id="main-content">
-                <article class="article">
-                    <h12 id="properties">Properties</h12>
-                    <p>All configurable properties and their default values.</p>
-                </article>
-            </main>
-            <!--<div class="container Page2">Page</div> -->  
-            <div class="container Page1">Page Of Index
-                <div class="layout">
-                    <!-- Sidebar Navigation -->
-                    <aside class="sidebar" id="sidebar">
-                        <nav class="sidebar-nav" role="navigation" aria-label="Sidebar navigation">
-                            <div class="nav-section">
-                                <h13 class="nav-section-title">
-                                    📚 Getting Started
-                                    <button class="nav-toggle" data-section="getting-started">
-                                        <span class="chevron">▶</span>
-                                    </button>
-                                </h13>
-                                <ul class="nav-list" id="getting-started">
-                                    <li><a href="#introduction" class="nav-item active">Introduction</a></li>
-                                    <li><a href="#installation" class="nav-item">Installation</a></li>
-                                    <li><a href="#quick-start" class="nav-item">Quick Start</a></li>
-                                </ul>
-                            </div>
-                        
-                            <div class="nav-section">
-                                <h13 class="nav-section-title">
-                                    🔧 Configuration
-                                    <button class="nav-toggle" data-section="configuration">
-                                        <span class="chevron">▶</span>
-                                    </button>
-                                </h13>
-                                <ul class="nav-list" id="configuration">
-                                    <li><a href="#basic-config" class="nav-item">Basic Configuration</a></li>
-                                    <li><a href="#advanced-config" class="nav-item">Advanced Settings</a></li>
-                                    <li><a href="#themes" class="nav-item">Themes</a></li>
-                                </ul>
-                            </div>
+        <!-- Main Content (Column 2) -->
+        <main class="main-content" id="main-content">
+            <article class="article">
+                <!-- Existing content -->
+                <h11 id="introduction">Introduction</h11>
+                <p>Welcome to our comprehensive documentation. This site demonstrates a fully functional documentation layout without using frameworks like VitePress or Vue.js.</p>
                 
-                            <div class="nav-section">
-                                <h13 class="nav-section-title">
-                                    📖 API Reference
-                                    <button class="nav-toggle" data-section="api">
-                                        <span class="chevron">▶</span>
-                                    </button>
-                                </h13>
-                                <ul class="nav-list" id="api">
-                                    <li><a href="#methods" class="nav-item">Methods</a></li>
-                                    <li><a href="#events" class="nav-item">Events</a></li>
-                                    <li><a href="#properties" class="nav-item">Properties</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </aside>
+                <h12 id="features">Key Features</h12>
+                <ul>
+                    <li>Responsive design with mobile-first approach</li>
+                    <li>Dark/Light theme switching</li>
+                    <li>Client-side search functionality</li>
+                    <li>Auto-generated table of contents</li>
+                    <li>Collapsible sidebar navigation</li>
+                    <li>Performance optimizations</li>
+                </ul>
 
-                    <!-- Table of Contents -->
-                    <aside class="toc" id="toc">
-                        <div class="toc-header">
-                            <h14>On this page</h14>
-                        </div>
-                        <nav class="toc-nav" id="toc-nav" role="navigation" aria-label="Table of contents">
-                            <!-- TOC will be auto-generated by JavaScript -->
-                        </nav>
-                    </aside>
-                </div>
-        
-                <!-- Loading Indicator -->
-                <div class="loading" id="loading">
-                    <div class="spinner"></div>
-                </div>
+                <!-- ADD BACK THE MISSING SECTIONS -->
+                
+                <!-- About Yougems Section -->
+                <section id="about-yougems">
+                    <h11>About Yougems</h11>
+                    <p>Yougems is a comprehensive documentation and diagramming solution that provides powerful tools for creating interactive documentation, flowcharts, sequence diagrams, and more.</p><a data-v25abc=""                                                            class="VPLink link link" href="./intro/About-Yougems.html"><p data-v25abc=""class="text">About Yougems</p></a>
+                    
+                    <h12>What is Yougems?</h12>
+                    <p>Yougems combines the power of markdown documentation with advanced diagramming capabilities, making it easy to create professional documentation that includes visual elements.</p>
+                </section>
 
-        <aside data-vef86="" data-v85="" class="VPSidebar">
-                <div data-vef86="" class="curtain"></div>
-                <nav data-vef86="" class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1">
-                    <span data-vef86="" class="visually-hidden" id="sidebar-aria-label"> Sidebar Navigation </span>
-                    <div data-v23d="" class="group">
-                            <section data-v25abc=""data-v23d="" 
-                                        class="VPSidebarItem level-0 collapsible has-active">
-                                            <div data-v25abc=""
-                                                class="item" role="button" tabindex="0">
-                                                <div data-v25abc="" class="indicator"></div><h2 data-v25abc="" class="text">📔 Introduction</h2>
-                                                    <div data-v25abc= "Shadow and Bone"
-                                                        class="caret" role="button" aria-label="toggle section" tabindex="0">
-                                                        <span data-v25abc=""class="vpi-chevron-rightcaret-icon"><span></div>            
-                                                <article class="article">
-                                                    <h11 id="introduction">Introduction</h11>
-                                                        <p>Welcome to our comprehensive documentation. This site demonstrates a fully functional documentation layout without using frameworks like VitePress or Vue.js.</p>
-                                                        <h12 id="features">Key Features</h12>
-                                                        <ul>
-                                                            <li>Responsive design with mobile-first approach</li>
-                                                            <li>Dark/Light theme switching</li>
-                                                            <li>Client-side search functionality</li>
-                                                            <li>Auto-generated table of contents</li>
-                                                            <li>Collapsible sidebar navigation</li>
-                                                            <li>Performance optimizations</li>
-                                                        </ul>
-                                                </article>            
-                                            </div>
-                                            <div data-v25abc=""
-                                                    class="items">
-                                                    <div data-v25abc=""
-                                                            class="VPSidebarItem level-1 is-link is-active has-active"><div data-v25abc=""
-                                                            class="item"><div data-v25abc="" class="indicator"></div><a data-v25abc=""
-                                                            class="VPLink link link" href="./intro/About-Yougems.html"><p data-v25abc=""
-                                                            class="text">About Yougems</p></a><!----></div><!---->
-                                                        </div>
-                                                        <div data-v25abc=""
-                                                            class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                            class="item"><div data-v25abc="" class="indicator"></div><a data-v25abc=""
+                <!-- Installation Section -->
+                <section id="installation">
+                    <h11>Installation</h11>
+                    <p>Get started by following these simple installation steps:</p><a data-v25abc=""
                                                             class="VPLink link link" href="./intro/getting-started.html"><p data-v25abc=""
-                                                            class="text">Getting Started</p></a><!----></div><!---->
-                                                        </div>
-                                            </div>        
-                            </section>
-                    </div>
-                    <div data-v23d="" class="group">
-                            <section data-v25abc=""data-v23d="" 
-                                        class="VPSidebarItem level-0 collapsible has-active">
-                                            <div data-v25abc=""
-                                                class="item" role="button" tabindex="0">
-                                                <div data-v25abc="" class="indicator"></div><h2 data-v25abc="" class="text">📔 Installation</h2>
-                                                    <div data-v25abc="Shadow and Bone"
-                                                        class="caret" role="button" aria-label="toggle section" tabindex="0">
-                                                        <span data-v25abc=""class="vpi-chevron-rightcaret-icon"><span>
-                                                    </div>            
-                                                    <article class="article">
-                                                        <h12 id="installation">Installation</h12>
-                                                        <p>Get started by following these simple installation steps:</p>
-                                                    </article>  
-                                                        <div class="code-block">
-                                                            <div class="code-header">
-                                                                <span class="code-language">bash</span>
+                                                            class="text">Getting Started</p></a>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">bash</span>
                                                                 <button class="copy-btn" data-copy="npm install my-docs-library">Copy</button>
-                                                            </div>
+                        </div>
                                                             <pre><code>npm install my-docs-library</code></pre>
-                                                        </div>
-                                                        <article class="article">
-                                                        <h12 id="quick-start">Quick Start</h12>
-                                                        <p>Here's how to get up and running quickly:</p>
-                                                        </article>
-<div class="code-block">
-    <div class="code-header">
-        <span class="code-language">javascript</span>
+                    </div>
+                </section>
+
+                <!-- Quick Start Section -->
+                <section id="quick-start">
+                    <h11>Quick Start</h11>
+                    <p>Here's how to get up and running quickly:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">javascript</span>
         <button class="copy-btn" data-copy="import MyLibrary from 'my-docs-library';\n\nconst instance = new MyLibrary({\n  theme: 'dark',\n  responsive: true\n});\n\ninstance.init();">Copy</button>
-    </div>
+                        </div>
 <pre>
 <code>
 import MyLibrary from 'my-docs-library';
 const instance = new MyLibrary({
-theme: 'dark',
-responsive: true
-});instance.init();
-</code>
-</pre>
-</div>
-                        
+  theme: 'dark',
+  responsive: true
+});
 
-                                                    
-                                            </div>
-                            </section>
+instance.init();</code></pre>
                     </div>
+                </section>
 
-                    <div data-v23d="" 
-                            class="group">
-                            <section data-v25abc=""data-v23d="" 
-                                    class="VPSidebarItem level-0 collapsible">
-                                    <div data-v25abc=""
-                                        class="item" role="button" tabindex="0"><div data-v25abc=""                        
-                                        class="indicator"></div><h2 data-v25abc="" class="text">📊 Diagram Syntax</h2><div data-v25abc=""
-                                        class="caret" role="button" aria-label="toggle section" tabindex="0"><span data-v25abc=""
-                                        class="vpi-chevron-right caret-icon"></span></div>
-                                    </div>
-                                        <div data-v25abc=""
-                                                class="items">
-                                                <div data-v25abc=""
-                                                        class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                        class="item"><div data-v25abc=""                            
-                                                        class="indicator"></div><a data-v25abc=""
+                <!-- Diagram Syntax Sections -->
+                <section id="flowchart">
+                    <h11>Flowchart</h11>
+                    <p>Create beautiful flowcharts using simple syntax:</p><a data-v25abc=""
                                                                 class="VPLink link link" href="./syntax/flowchart.html"><p data-v25abc=""
-                                                                class="text">Flowchart</p></a><!----></div><!---->
-                                                    </div>
-                                                    <div data-v25abc=""
-                                                        class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                        class="item"><div data-v25abc=""
-                                                        
-                                                        class="indicator"></div><a data-v25abc=""
+                                                                class="text">Flowchart</p></a>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">mermaid</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>flowchart TD
+    A[Start] --> B{Decision?}
+    B -->|Yes| C[Action 1]
+    B -->|No| D[Action 2]
+    C --> E[End]
+    D --> E</code></pre>
+                    </div>
+                </section>
+
+                <section id="sequence-diagram">
+                    <h11>Sequence Diagram</h11>
+                    <p>Document interactions between different components:</p><a data-v25abc=""
                                                         class="VPLink link link" href="./syntax/sequenceDiagram.html"><p data-v25abc=""
-                                                        class="text">Sequence Diagram</p></a><!----></div><!---->
-                                                    </div><div data-v25abc=""
-                                                        class="VPSidebarItem level-1 is-link">
-                                                        <div data-v25abc=""
-                                                                class="item"><div data-v25abc=""                            class="indicator"></div>
-                                                                <a data-v25abc=""
+                                                        class="text">Sequence Diagram</p></a>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">mermaid</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>sequenceDiagram
+    participant A as Alice
+    participant B as Bob
+    A->>B: Hello Bob, how are you?
+    B-->>A: Great!</code></pre>
+                    </div>
+                </section>
+
+                <section id="class-diagram">
+                    <h11>Class Diagram</h11>
+                    <p>Model your application's structure with class diagrams:</p><a data-v25abc=""
                                                                 class="VPLink link link" href="./syntax/classDiagram.html"><p data-v25abc=""
                                                                 class="text"> Class Diagram</p>
-                                                                </a><!---->
-                                                        </div><!----></div>
-                                                        <div data-v25abc=""
-                                                            class="VPSidebarItem level-1 is-link">
-                                                            <div data-v25abc=""
-                                                                    class="item"><div data-v25abc=""                            class="indicator"></div>
-                                                                    <a data-v25abc=""
+                                                                </a>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">mermaid</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>classDiagram
+    class Animal {
+        +String name
+        +makeSound()
+    }
+    class Dog {
+        +bark()
+    }
+    Animal <|-- Dog</code></pre>
+                    </div><a data-v25abc=""
                                                                     class="VPLink link link" href="./syntax/packet.html"><p data-v25abc=""
                                                                     class="text">Packet 🔥</p>
-                                                                    </a><!---->
-                                                            </div>
-                                                            <!---->
-                                                        </div>
-                                                        <div data-v25abc=""
-                                                                class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                                class="item"><div data-v25abc=""                                                                                               
-                                                        class="indicator"></div><a data-v25abc=""
+                                                                    </a>
+                </section>
+
+                <!-- Configuration Sections -->
+                <section id="basic-config">
+                    <h11>Basic Configuration</h11>
+                    <p>Configure Yougems with these basic options:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">json</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>{
+  "theme": "light",
+  "responsive": true,
+  "autoResize": true,
+  "showGrid": false
+}</code></pre>
+                    </div><a data-v25abc=""
                                                                 class="VPLink link link" href="./syntax/examples.html"><p data-v25abc=""
-                                                                class="text">Other Examples</p></a><!----></div><!---->
-                                                        </div>
-                                        </div>
-                            </section>
+                                                                class="text">Other Examples</p></a>
+                </section>
+
+                <section id="advanced-config">
+                    <h11>Advanced Settings</h11>
+                    <p>For more complex use cases, explore these advanced configuration options:</p>
+                    
+                    <h12 id="config-options">Configuration Options</h12>
+                    <p>Available configuration parameters and their usage:</p>
+                    <ul>
+                        <li><code>theme</code> - Set the visual theme (light/dark)</li>
+                        <li><code>responsive</code> - Enable responsive behavior</li>
+                        <li><code>autoResize</code> - Automatically resize diagrams</li>
+                        <li><code>showGrid</code> - Display background grid</li>
+                    </ul>
+                </section>
+
+                <section id="themes">
+                    <h11>Themes</h11>
+                    <p>Customize the appearance with built-in themes or create your own:</p>
+                    
+                    <h12>Available Themes</h12>
+                    <ul>
+                        <li>Light Theme</li>
+                        <li>Dark Theme</li>
+                        <li>High Contrast</li>
+                        <li>Custom Themes</li>
+                    </ul>
+                </section>
+
+                <!-- API Reference Sections -->
+                <section id="methods">
+                    <h11>API Methods</h11>
+                    <p>Complete reference of all available methods in the API:</p>
+                    
+                    <h12>Core Methods</h12>
+                    <ul>
+                        <li><code>init()</code> - Initialize the Yougems instance</li>
+                        <li><code>render()</code> - Render diagrams</li>
+                        <li><code>destroy()</code> - Clean up resources</li>
+                        <li><code>setTheme(theme)</code> - Change theme dynamically</li>
+                    </ul>
+                </section>
+
+                <section id="events">
+                    <h11>Events</h11>
+                    <p>Event system documentation and usage examples:</p>
+                    
+                    <h12>Available Events</h12>
+                    <ul>
+                        <li><code>ready</code> - Fired when Yougems is initialized</li>
+                        <li><code>render</code> - Fired when a diagram is rendered</li>
+                        <li><code>error</code> - Fired when an error occurs</li>
+                        <li><code>themeChange</code> - Fired when theme changes</li>
+                    </ul>
+                </section>
+
+                <section id="properties">
+                    <h11>Properties</h11>
+                    <p>All configurable properties and their default values:</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Type</th>
+                                <th>Default</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>theme</td>
+                                <td>string</td>
+                                <td>'light'</td>
+                                <td>Visual theme</td>
+                            </tr>
+                            <tr>
+                                <td>responsive</td>
+                                <td>boolean</td>
+                                <td>true</td>
+                                <td>Enable responsive behavior</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Ecosystem Sections -->
+                <section id="yougems-chart">
+                    <h11>Yougems Chart</h11>
+                    <p>Integrate Yougems with popular charting libraries:</p>
+                    
+                    <h12>Supported Libraries</h12>
+                    <ul>
+                        <li>Chart.js</li>
+                        <li>Highcharts</li>
+                        <li>Google Charts</li>
+                    </ul>
+                </section>
+
+                <section id="tutorials">
+                    <h11>Tutorials</h11>
+                    <p>Step-by-step guides to help you get the most out of Yougems:</p>
+                    
+                    <h12>Beginner Tutorials</h12>
+                    <ul>
+                        <li><a href="./tutorials/intro-to-yougems.html" class="nav-item">Introduction to Yougems</a></li>
+                        <li><a href="./tutorials/first-diagram.html" class="nav-item">Creating Your First Diagram</a></li>
+                    </ul>
+                    
+                    <h12>Advanced Tutorials</h12>
+                    <ul>
+                        <li><a href="./tutorials/yougems-with-react.html" class="nav-item">Using Yougems with React</a></li>
+                        <li><a href="./tutorials/yougems-with-vue.html" class="nav-item">Using Yougems with Vue</a></li>
+                    </ul>
+                </section>
+
+                <!-- Deployment and Configuration Sections -->
+                <section id="configuration">
+                    <h11>Configuration</h11>
+                    <p>Learn how to configure Yougems for your project:</p>
+                    
+                    <h12>Basic Configuration</h12>
+                    <p>Start with these basic configuration options:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">json</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>{
+  "theme": "light",
+  "responsive": true
+}</code></pre>
                     </div>
-                    <div data-v23d=""
+                </section>
 
-            class="group">
-                            <section data-v25abc=""data-v23d="" 
-                                class="VPSidebarItem level-0 collapsible"><div data-v25abc=""
-                                class="item" role="button" tabindex="0"><div data-v25abc=""
-                                        
-                                class="indicator"></div><h2 data-v25abc="" class="text">📚 Ecosystem</h2><div data-v25abc=""
-                                class="caret" role="button" aria-label="toggle section" tabindex="0"><span data-v25abc=""
-                                class="vpi-chevron-right caret-icon"></span></div></div><div data-v25abc=""
-                                class="items"><div data-v25abc=""
-                                class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                class="item"><div data-v25abc=""
-                                        
-                                        class="indicator"></div><a data-v25abc=""
-                                        class="VPLink link link" href="./ecosystem/Yougems-chart.html"><p data-v25abc=""
-                                        class="text">Yougems Chart</p></a><!----></div><!----></div><div data-v25abc=""
-                                        class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                        class="item"><div data-v25abc=""
-                                        
-                                        class="indicator"></div><a data-v25abc=""
-                                        class="VPLink link link" href="./ecosystem/tutorials.html"><p data-v25abc=""
-                                        class="text">Tutorials</p></a><!----></div><!----></div><div data-v25abc=""
-                                        class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                        class="item"><div data-v25abc=""
-                                        
-                                        class="indicator"></div><a data-v25abc=""
-                                        class="VPLink link link" href="./ecosystem/integrations-community.html"><p data-v25abc=""
-                                        class="text">Integrations - Community</p></a><!----></div><!----></div><div data-v25abc=""
-                                        class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                        class="item"><div data-v25abc=""
-                                        
-                                        class="indicator"></div><a data-v25abc=""
-                                        class="VPLink link link" href="./ecosystem/integrations-create.html"><p data-v25abc=""
-                                        class="text">Integrations - Create</p></a><!----></div><!----></div></div>
-                         </section>
+                <section id="api-usage">
+                    <h11>API-Usage</h11>
+                    <p>Understand how to use the Yougems API effectively:</p>
+                    
+                    <h12>Making API Calls</h12>
+                    <p>Learn how to make API calls to Yougems:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">javascript</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>fetch('https://api.yougems.com/v1/docs')
+  .then(response => response.json())
+  .then(data => console.log(data));</code></pre>
                     </div>
-                    <div data-v23d="" 
-                        class="group">
-                        <section data-v25abc=""data-v23d="" 
-                            class="VPSidebarItem level-0 collapsible">
-                            <div data-v25abc=""
-                                class="item" role="button" tabindex="0">
-                                <div data-v25abc=""
-                                class="indicator">
-                                </div>
-                                <h2 data-v25abc="" class="text">⚙️ Deployment and Configuration</h2>
-                                <div data-v25abc=""
-                                class="caret" role="button" aria-label="toggle section" tabindex="0"><span data-v25abc=""
-                                class="vpi-chevron-right caret-icon"></span>
-                                </div>
-                                <article class="article">
-                                    <h12 id="basic-config">Basic Configuration</h12>
-                                    <p>Configure the library with these basic options:</p>
-                                    
-                                    <h13 id="config-options">Configuration Options</h13>
-                                    <p>Available configuration parameters and their usage.</p>
-                                    
-                                    <h12 id="advanced-config">Advanced Settings</h12>
-                                    <p>For more complex use cases, explore these advanced configuration options.</p>
-                                    
-                                    <h12 id="themes">Themes</h12>
-                                    <p>Customize the appearance with built-in themes or create your own.</p>
-                                    
-                                    <h12 id="methods">API Methods</h12>
-                                    <p>Complete reference of all available methods in the API.</p>
-                                    
-                                    <h12 id="events">Events</h12>
-                                    <p>Event system documentation and usage examples.</p>
-                                    
-                                    <h12 id="properties">Properties</h12>
-                                    <p>All configurable properties and their default values.</p>
-                                </article>
-                            </div>
-                            <div data-v25abc=""
-                                    class="items"><div data-v25abc=""
-                                                    class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                    class="item"><div data-v25abc=""
-                                                    
-                                                    class="indicator"></div><a data-v25abc=""
-                                                    class="VPLink link link" href="./config/configuration.html"><p data-v25abc=""
-                                                    class="text">Configuration</p></a><!----></div><!---->
-                                                </div>
-                                                <div data-v25abc=""
-                                                class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                class="item"><div data-v25abc=""
-                                                
-                                                class="indicator"></div><a data-v25abc=""
-                                                class="VPLink link link" href="./config/usage.html"><p data-v25abc=""
-                                                class="text">API-Usage</p></a><!----></div><!---->
-                                                </div>
-                                                <div data-v25abc=""
-                                                class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                class="item"><div data-v25abc=""
-                                                
-                                                class="indicator"></div><a data-v25abc=""
-                                                class="VPLink link link" href="./config/setup/README.html"><p data-v25abc=""
-                                                class="text">Yougems API Configuration</p></a><!----></div><!---->
-                                                </div>
-                                                <div data-v25abc=""
-                                                class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                class="item"><div data-v25abc=""
-                                                
-                                                class="indicator"></div><a data-v25abc=""
-                                                class="VPLink link link" href="./config/schema-docs/config.html"><p data-v25abc=""
-                                                class="text">Yougems Configuration Options</p></a><!----></div><!---->
-                                            </div>
-                                            <div data-v25abc=""
-                                                class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                                class="item"><div data-v25abc=""
-                                                                                            
-                                                class="indicator"></div><a data-v25abc=""
-                                                class="VPLink link link" href="./config/faq.html"><p data-v25abc=""
-                                                class="text">FAQ</p></a><!----></div><!---->
-                                            </div>
-                            </div>
-                        </section>
-            </div>
-                <div data-v23d="" 
-                        class="group">
-                        <section data-v25abc=""data-v23d="" 
-                                            class="VPSidebarItem level-0 collapsible"><div data-v25abc=""
-                                            class="item" role="button" tabindex="0"><div data-v25abc=""
-                                            
-                                            class="indicator"></div><h2 data-v25abc=""                        class="text">🙌 Contributing</h2><div data-v25abc=""
-                                            class="caret" role="button" aria-label="toggle section" tabindex="0"><span data-v25abc=""
-                                            class="vpi-chevron-right caret-icon"></span></div></div><div data-v25abc=""
-                                            class="items"><div data-v25abc=""
-                                            class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                            class="item"><div data-v25abc=""
-                                            
-                                            class="indicator"></div><a data-v25abc=""
-                                            class="VPLink link link" href="./community/intro.html"><p data-v25abc=""
-                                            class="text">Getting Started</p></a><!----></div><!----></div><div data-v25abc=""
-                                            class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                            class="item"><div data-v25abc=""
-                                            
-                                            class="indicator"></div><a data-v25abc=""
-                                            class="VPLink link link" href="./community/contributing.html"><p data-v25abc=""
-                                            class="text">Contributing to Yougems</p></a><!----></div><!----></div><div data-v25abc=""
-                                            class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                            class="item"><div data-v25abc=""
-                                            
-                                            class="indicator"></div><a data-v25abc=""
-                                            class="VPLink link link" href="./community/new-diagram.html"><p data-v25abc=""
-                                            class="text">Adding Diagrams</p></a><!----></div><!----></div><div data-v25abc=""
-                                            class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                            class="item"><div data-v25abc=""
-                                            
-                                            class="indicator"></div><a data-v25abc=""
-                                            class="VPLink link link" href="./community/questions-and-suggestions.html"><p data-v25abc=""
-                                            class="text">Questions and Suggestions</p></a><!----></div><!----></div><div data-v25abc=""
-                                            class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                                            class="item"><div data-v25abc=""
-                                            
-                                            class="indicator"></div><a data-v25abc=""
-                                            class="VPLink link link" href="./community/security.html"><p data-v25abc=""
-                                            class="text">Security</p></a><!----></div><!----></div></div>
-                        </section>
-            </div>
-            <div data-v23d="" 
-                    class="group">
-                    <section data-v25abc=""data-v23d="" 
-                        class="VPSidebarItem level-0 collapsible"><div data-v25abc=""
-                        class="item" role="button" tabindex="0"><div data-v25abc=""
-                        
-                        class="indicator"></div><h2 data-v25abc=""                        class="text">📰 Latest News</h2><div data-v25abc=""
-                        class="caret" role="button" aria-label="toggle section" tabindex="0"><span data-v25abc=""
-                        class="vpi-chevron-right caret-icon"></span></div></div><div data-v25abc=""
-                        class="items"><div data-v25abc=""
-                        class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                        class="item"><div data-v25abc=""
-                        
-                        class="indicator"></div><a data-v25abc=""
-                        class="VPLink link link" href="./news/announcements.html"><p data-v25abc=""
-                        class="text">Announcements</p></a><!----></div><!----></div><div data-v25abc=""
-                        class="VPSidebarItem level-1 is-link"><div data-v25abc=""
-                        class="item"><div data-v25abc=""
-                        
-                        class="indicator"></div><a data-v25abc=""
-                        class="VPLink link link" href="./news/blog.html"><p data-v25abc=""
-                        class="text">Blog</p></a><!----></div><!----></div></div>
-                    </section>
-            </div>
-        </nav>
-    </aside>
-        </div>                
-                    <!--<div class="container Page1">Page</div> -->  
-               <div 
-               class="item item-1">1
-                <p>A stylized background inspired by the Netflix series "Shadow and Bone," featuring abstract bone and shadow shapes for a dramatic effect..
-                </p>
-                    <img src="./images/2im/21-bck_grnd-sh_bones.png" alt="Image van div 1" 
-                    class="image1"/>
-                </p>
-            </div>
-            <div 
-            class="item item-2">2
-                <p>The Firefox web browser logo, representing open-source technology, privacy, and internet freedom.
-                </p>
+                </section>
 
-                    <img src="./images/2im/22-FF_image.JPG" alt="Image van div 2" 
-                    class="image2"/>
+                <section id="yougems-api-configuration">
+                    <h11>Yougems API Configuration</h11>
+                    <p>Configure the Yougems API settings:</p>
+                    
+                    <h12>API Key</h12>
+                    <p>Obtain your API key from the Yougems dashboard and set it in your configuration:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">json</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>{
+  "apiKey": "YOUR_API_KEY"
+}</code></pre>
+                    </div>
+                </section>
 
+                <section id="yougems-configuration-options">
+                    <h11>Yougems Configuration Options</h11>
+                    <p>Explore the available configuration options for Yougems:</p>
+                    
+                    <h12>Common Options</h12>
+                    <ul>
+                        <li><code>theme</code> - Set the visual theme (light/dark)</li>
+                        <li><code>responsive</code> - Enable responsive behavior</li>
+                    </ul>
+                </section>
+
+                <section id="faq">
+                    <h11>FAQ</h11>
+                    <p>Frequently asked questions about Yougems:</p>
+                    
+                    <h12>General Questions</h12>
+                    <ul>
+                        <li><a href="#what-is-yougems">What is Yougems?</a></li>
+                        <li><a href="#how-to-install">How to install Yougems?</a></li>
+                    </ul>
+                </section>
+
+                <!-- Contributing Sections -->
+                <section id="contributing-overview">
+                    <h11>Contributing to Yougems</h11>
+                    <p>Learn how to contribute to the Yougems project:</p>
+                    
+                    <h12>Getting Started</h12>
+                    <p>Follow these steps to get started with contributing:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">bash</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>git clone https://github.com/your-repo/yougems.git
+cd yougems
+npm install</code></pre>
+                    </div>
+                </section>
+
+                <section id="adding-diagrams">
+                    <h11>Adding Diagrams</h11>
+                    <p>Contribute your diagrams to the Yougems project:</p>
+                    
+                    <h12>Diagram Guidelines</h12>
+                    <p>Follow these guidelines when creating diagrams:</p>
+                    <ul>
+                        <li>Use clear and descriptive labels</li>
+                        <li>Keep diagrams simple and focused</li>
+                        <li>Ensure diagrams are responsive</li>
+                    </ul>
+                </section>
+
+                <section id="questions-and-suggestions">
+                    <h11>Questions and Suggestions</h11>
+                    <p>We welcome your questions and suggestions:</p>
+                    
+                    <h12>Contact Us</h12>
+                    <p>Reach out to us via the following channels:</p>
+                    <ul>
+                        <li>Email: support@yougems.com</li>
+                        <li>Twitter: @yougems</li>
+                    </ul>
+                </section>
+
+                <section id="security">
+                    <h11>Security</h11>
+                    <p>Your security is important to us:</p>
+                    
+                    <h12>Reporting Vulnerabilities</h12>
+                    <p>If you discover a security vulnerability, please report it:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">markdown</span>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                        <pre><code>**Security Vulnerability Report**
+
+**Description:** [Provide a brief description of the vulnerability]
+
+**Steps to Reproduce:** [Detail the steps to reproduce the vulnerability]
+
+**Impact:** [Explain the potential impact of the vulnerability]
+
+**Mitigation:** [Suggest mitigations or fixes]
+
+**Reporter Information:** [Optional: Your name and contact information]</code></pre>
+                    </div>
+                </section>
+
+                <!-- News Sections -->
+                <section id="announcements">
+                    <h11>Announcements</h11>
+                    <p>Stay updated with the latest announcements:</p>
+                    
+                    <h12>Version 2.0 Released</h12>
+                    <p>We are excited to announce the release of Yougems version 2.0. This major update includes:</p>
+                    <ul>
+                        <li>New diagram types: Gantt charts, Pie charts</li>
+                        <li>Enhanced API with new endpoints</li>
+                        <li>Improved performance and stability</li>
+                    </ul>
+                </section>
+
+                <section id="blog">
+                    <h11>Blog</h11>
+                    <p>Read the latest blog posts:</p>
+                    
+                    <h12>Introducing Yougems 2.0</h12>
+                    <p>Discover the new features and improvements in Yougems 2.0:</p>
+                    <a href="./blog/introducing-yougems-2-0.html" class="nav-item">Read more</a>
+                </section>
+            </article>
+        </main>
+        
+        <!-- Table of Contents (Column 3) -->
+        <aside class="toc" id="toc">
+            <div class="toc-header">
+                <h14>On this page</h14>
             </div>
-            <div 
-            class="item item-3">3
-                <p1>The OpenAI logo, symbolizing artificial intelligence, machine learning, and innovative technology
-                </p1>
+            <nav class="toc-nav" id="toc-nav" role="navigation" aria-label="Table of contents">
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#features">Key Features</a></li>
+                    <li><a href="#about-yougems">About Yougems</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#quick-start">Quick Start</a></li>
+                    <li><a href="#flowchart">Flowchart</a></li>
+                    <li><a href="#sequence-diagram">Sequence Diagram</a></li>
+                    <li><a href="#class-diagram">Class Diagram</a></li>
+                    <li><a href="#basic-config">Basic Configuration</a></li>
+                    <li><a href="#advanced-config">Advanced Settings</a></li>
+                    <li><a href="#themes">Themes</a></li>
+                    <li><a href="#methods">API Methods</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#yougems-chart">Yougems Chart</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="#contributing">Contributing</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#announcements">Announcements</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div> <!-- End of .layout -->
 
-                    <img src="./images/2im/23-open_ai.png" alt="Image van div 3" 
-                    class="image3"/>
-            </div>
-            <div 
-            class="item item-4">4
-                <p1>An illustration of a lizard, adding a playful and natural element to the design.
-                </p1>
-
-                    <img src="./images/2im/24-Lizard.png" alt="Image van div 4" 
-                    class="image4"/>
-            </div>        
-    </div>
-</section>
+    <!-- Add back missing elements -->
     
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    
+    <!-- Loading Indicator -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Image Gallery Section -->
+    <section class="image-gallery">
+        <div class="item item-1">1
+            <p>A stylized background inspired by the Netflix series "Shadow and Bone," featuring abstract bone and shadow shapes for a dramatic effect.</p>
+            <img src="./images/2im/21-bck_grnd-sh_bones.png" alt="Image van div 1" class="image1"/>
+        </div>
+        
+        <div class="item item-2">2
+            <p>The Firefox web browser logo, representing open-source technology, privacy, and internet freedom.</p>
+            <img src="./images/2im/22-FF_image.JPG" alt="Image van div 2" class="image2"/>
+        </div>
+        
+        <div class="item item-3">3
+            <p1>The OpenAI logo, symbolizing artificial intelligence, machine learning, and innovative technology</p1>
+            <img src="./images/2im/23-open_ai.png" alt="Image van div 3" class="image3"/>
+        </div>
+        
+        <div class="item item-4">4
+            <p1>An illustration of a lizard, adding a playful and natural element to the design.</p1>
+            <img src="./images/2im/24-Lizard.png" alt="Image van div 4" class="image4"/>
+        </div>
+    </section>
+
+</div> <!-- End of #app -->
 <div id="markdown-content">5</div>
 <script>loadMarkdownSection('../README.md', 'YouGems', 'markdown-content');</script>
 
