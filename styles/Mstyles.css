@@ -9,18 +9,25 @@ html {
 }
 
 body{
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     border: 5px solid blueviolet;
     line-height: 1.2;
     height: 100vh;
     height: fit-content;
     /* overflow: hidden;*/
 
-    }
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-primary);
+   /* line-height: 1.6;*/
+    transition: var(--transition);
+}
     h1{
         margin-top: 45px;
-        margin-left: 19%;
+        margin-left: 21.5%;
         width: 61%;
         text-align: center;
         border: 1px solid black;
@@ -132,7 +139,7 @@ body{
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
     
     --sidebar-width: 250px;
-    --toc-width: 200px;
+    --toc-width: 250px;
     --header-height: 65px; /* Make sure this matches your actual header height */
     --mobile-breakpoint: 768px;
     --scroll-offset: calc(var(--header-height) + 5px); /* Add extra 20px buffer */
@@ -161,17 +168,7 @@ body{
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
-body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
-    color: var(--text-primary);
-    line-height: 1.6;
-    transition: var(--transition);
-}
 
 /* Skip Link for Accessibility */
 .skip-link {
@@ -196,7 +193,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 5px;
     border: 5px solid red; /* See the actual header size */
     height: var(--header-height);
     background-color: var(--surface-color);
@@ -444,14 +441,14 @@ body {
     grid-template-columns: var(--sidebar-width) 1fr var(--toc-width);
     grid-template-rows: 1fr;
     min-height: 100vh;
-    padding-top: var(--header-height);
+  /*  padding-top: var(--header-height);*/
 }
 
 /* Ensure proper grid placement */
 .sidebar {
     position: fixed;
     top: var(--header-height);
-    left: 0;
+    left: 5px;
     width: var(--sidebar-width);
     height: calc(100vh - var(--header-height));
     background-color: var(--surface-color);
@@ -466,7 +463,10 @@ body {
 .main-content {
     grid-column: 2;
     background: lightgreen;
-    padding: 20px;
+    padding: 5px;
+    max-width: none;
+    overflow-x: hidden;
+
 }
 
 .toc {
@@ -546,11 +546,8 @@ body {
 }
 
 /* Main Content */
-.content {
+.main-content {
     grid-column: 2;display: block;border: 3px solid violet;
-    padding: 2rem;
-    max-width: none;
-    overflow-x: hidden;
 }
 
 .article {
