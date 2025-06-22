@@ -222,7 +222,7 @@ class DocumentationSite {
     }
 
     buildSearchIndex() {
-        const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        const headings = document.querySelectorAll('h1, h11, h2, h12, h3, h13, h4, h5, h6');
         const paragraphs = document.querySelectorAll('p');
         
         this.searchIndex = [];

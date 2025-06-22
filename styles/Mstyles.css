@@ -5,7 +5,7 @@ html {
 */
 /* Add scroll padding to account for fixed header */
 html {
-    scroll-padding-top: 65px;
+    scroll-padding-top: 0px;
 }
 
 body{
@@ -140,7 +140,7 @@ body {
     
     --sidebar-width: 250px;
     --toc-width: 250px;
-    --header-height: 65px; /* Make sure this matches your actual header height */
+    --header-height: 45px; /* Make sure this matches your actual header height */
     --mobile-breakpoint: 768px;
     --scroll-offset: calc(var(--header-height) + 5px); /* Add extra 20px buffer */
     
@@ -555,7 +555,7 @@ body {
 
 .article {
     display: block;border: 3px solid green;
-    max-width: 800px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
