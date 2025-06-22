@@ -27,14 +27,14 @@ body {
 }
     h1{
         margin-top: 45px;
-        margin-left: 21.5%;
+        margin-left: 19%;
         width: 61%;
         text-align: center;
         border: 1px solid black;
     }
 
     h2{
-        margin-left: 19%;
+        margin-left: 20%;
         width: 61%;
         height: fit-content;        
         text-align: center;
@@ -43,9 +43,9 @@ body {
 
     h3{
         margin-top: 15px;
-        margin-left: 19%;
+        margin-left: 20%;
         width: 61%;
-        height: fit-content;        
+       /* height: fit-content;        */
         text-align: center;
         border: 2px dashed black;
     }
@@ -60,32 +60,28 @@ body {
 
     }
 
-    section0{
-     /*   margin-left: 19%; */
-        width: auto;
-        height: auto;
-        border: 3px solid greenyellow;
-        padding: 5px;
-        display: flex;
-       /* flex-flow: row;*/
-        flex-flow: wrap;
-        justify-content: space-around;
-        }
     section{
-    /*    margin-left: 19%; */
         width: auto;
         height: auto;
         border: 3px solid greenyellow;
         padding: 5px;
-        display: flex;
-       /* flex-flow: row;*/
-        flex-flow: wrap;
-        justify-content: space-around;
         }
 
-    
+    .image-gallery{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        border: 3px solid greenyellow;
+        padding: 5px;
+        display: flex;
+        /*flex-flow: column;*/
+        flex-direction: column;
+        justify-content: center;
+        }
+
     .item{
-        width: 40%;
+        width: 80%;
         height: auto;
         border: 5px solid yellow;
         border-radius: 10px;   
@@ -114,6 +110,10 @@ body {
     .item-4{
         color: rgb(0, 255, 179);
         text-align: center;
+    }
+    .markdown-content{
+        margin-left: 20%; 
+        margin-right: 20%;
     }
 
     img {
@@ -204,7 +204,7 @@ body {
 
 .nav-container {
     max-width: 100%;
-    height: 100%;
+    height: auto;
     padding: 0 1rem;
     display: flex;
     align-items: center;
@@ -471,7 +471,10 @@ body {
 
 .toc {
     grid-column: 3;
-    background: lightyellow;
+    background: pink;
+    padding: 5px;
+    max-width: none;
+    overflow-x: hidden;
 }
 
 /* Sidebar */
@@ -573,6 +576,7 @@ h12 {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    margin-left: auto;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--border-color);
 }
@@ -670,7 +674,7 @@ code {
     overscroll-behavior: contain;
 }
 
-.toc-header h4 {
+.toc-header h14 {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--text-primary);
@@ -778,11 +782,11 @@ code {
         padding: 1rem;
     }
     
-    h1 {
+    h11 {
         font-size: 2rem;
     }
     
-    h2 {
+    h12 {
         font-size: 1.5rem;
     }
 }

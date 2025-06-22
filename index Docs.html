@@ -15,6 +15,8 @@
     <title>Index Docs Host YouGems 2Arcade</title>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 <h1>Index Docs Host YouGems 2Arcade</h1>
 
 <div id="app">
@@ -61,26 +63,13 @@
             </button>
         </div>
     </header>
-    
+<!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>    
     <!-- Main Grid Layout -->
     <div class="layout">
         <!-- Sidebar (Column 1) -->
         <aside class="sidebar" id="sidebar">
             <nav class="sidebar-nav" role="navigation" aria-label="Sidebar navigation">
-                <div class="nav-section">
-                    <h13 class="nav-section-title">
-                        📚 Getting Started
-                        <button class="nav-toggle" data-section="getting-started">
-                            <span class="chevron">▶</span>
-                        </button>
-                    </h13>
-                    <ul class="nav-list" id="getting-started">
-                        <li><a href="#introduction" class="nav-item active">Introduction</a></li>
-                        <li><a href="#installation" class="nav-item">Installation</a></li>
-                        <li><a href="#quick-start" class="nav-item">Quick Start</a></li>
-                    </ul>
-                </div>
-
                 <div class="nav-section">
                     <h13 class="nav-section-title">
                         📔 Introduction
@@ -91,8 +80,21 @@
                     <ul class="nav-list" id="introduction-section">
                         <!-- CHANGE FROM: href="./intro/About-Yougems.html" -->
                         <!-- TO: anchor links -->
+                        <li><a href="#introduction" class="nav-item active">Introduction</a></li>
+                        <li><a href="#features" class="nav-item">Key Features</a></li>
                         <li><a href="#about-yougems" class="nav-item">About Yougems</a></li>
-                        <li><a href="#installation" class="nav-item">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        📚 Getting Started
+                        <button class="nav-toggle" data-section="getting-started">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="getting-started">
+                        <li><a href="#installation" class="nav-item">Installation</a></li>
+                        <li><a href="#quick-start" class="nav-item">Quick Start</a></li>
                     </ul>
                 </div>
 
@@ -113,20 +115,6 @@
                     </ul>
                 </div>
 
-                <div class="nav-section">
-                    <h13 class="nav-section-title">
-                        📚 Ecosystem
-                        <button class="nav-toggle" data-section="ecosystem">
-                            <span class="chevron">▶</span>
-                        </button>
-                    </h13>
-                    <ul class="nav-list" id="ecosystem">
-                        <li><a href="#yougems-chart" class="nav-item">Yougems Chart</a></li>
-                        <li><a href="#tutorials" class="nav-item">Tutorials</a></li>
-                        <li><a href="#integrations-community" class="nav-item">Integrations - Community</a></li>
-                        <li><a href="#integrations-create" class="nav-item">Integrations - Create</a></li>
-                    </ul>
-                </div>
 
                 <div class="nav-section">
                     <h13 class="nav-section-title">
@@ -144,6 +132,20 @@
                         <li><a href="#properties" class="nav-item">Properties</a></li>
                     </ul>
                 </div>
+                <div class="nav-section">
+                    <h13 class="nav-section-title">
+                        📚 Ecosystem
+                        <button class="nav-toggle" data-section="ecosystem">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h13>
+                    <ul class="nav-list" id="ecosystem">
+                        <li><a href="#yougems-chart" class="nav-item">Yougems Chart</a></li>
+                        <li><a href="#tutorials" class="nav-item">Tutorials</a></li>
+                        <li><a href="#integrations-community" class="nav-item">Integrations - Community</a></li>
+                        <li><a href="#integrations-create" class="nav-item">Integrations - Create</a></li>
+                    </ul>
+                </div>
 
                 <div class="nav-section">
                     <h13 class="nav-section-title">
@@ -153,7 +155,7 @@
                         </button>
                     </h13>
                     <ul class="nav-list" id="contributing">
-                        <li><a href="#contributing" class="nav-item">Getting Started</a></li>
+                        <li><a href="#contributing-to" class="nav-item">Contributing</a></li>
                         <li><a href="#security" class="nav-item">Security</a></li>
                     </ul>
                 </div>
@@ -177,36 +179,37 @@
         <main class="main-content" id="main-content">
             <article class="article">
                 <!-- Existing content -->
-                <h11 id="introduction">Introduction</h11>
-                <p>Welcome to our comprehensive documentation. This site demonstrates a fully functional documentation layout without using frameworks like VitePress or Vue.js.</p>
-                
-                <h12 id="features">Key Features</h12>
-                <ul>
-                    <li>Responsive design with mobile-first approach</li>
-                    <li>Dark/Light theme switching</li>
-                    <li>Client-side search functionality</li>
-                    <li>Auto-generated table of contents</li>
-                    <li>Collapsible sidebar navigation</li>
-                    <li>Performance optimizations</li>
-                </ul>
+                <section ><h12 id="introduction">Introduction</h12>
+                    <p>Welcome to our comprehensive documentation. This site demonstrates a fully functional documentation layout without using frameworks like VitePress or Vue.js.</p>
+                    
+                    <h12 id="features">Key Features</h12>
+                    <ul>
+                        <li>Responsive design with mobile-first approach</li>
+                        <li>Dark/Light theme switching</li>
+                        <li>Client-side search functionality</li>
+                        <li>Auto-generated table of contents</li>
+                        <li>Collapsible sidebar navigation</li>
+                        <li>Performance optimizations</li>
+                    </ul>
+                </section>
 
                 <!-- ADD BACK THE MISSING SECTIONS -->
                 
                 <!-- About Yougems Section -->
-                <section id="about-yougems">
-                    <h11>About Yougems</h11>
+                <section ><h12 id="about-yougems">About Yougems</h12>
                     <p>Yougems is a comprehensive documentation and diagramming solution that provides powerful tools for creating interactive documentation, flowcharts, sequence diagrams, and more.</p><a data-v25abc=""                                                            class="VPLink link link" href="./intro/About-Yougems.html"><p data-v25abc=""class="text">About Yougems</p></a>
                     
                     <h12>What is Yougems?</h12>
                     <p>Yougems combines the power of markdown documentation with advanced diagramming capabilities, making it easy to create professional documentation that includes visual elements.</p>
+                        <a data-v25abc="" class="VPLink link link" href="./intro/getting-started.html"><p       data-v25abc="" class="text">Intro Getting Started</p>
+                    </a>
                 </section>
 
                 <!-- Installation Section -->
-                <section id="installation">
-                    <h11>Installation</h11>
-                    <p>Get started by following these simple installation steps:</p><a data-v25abc=""
-                                                            class="VPLink link link" href="./intro/getting-started.html"><p data-v25abc=""
-                                                            class="text">Getting Started</p></a>
+                <section >                    
+                    <h12 id="installation">Installation</h12>
+                    <p>Get started by following these simple installation steps:</p>
+
                     
                     <div class="code-block">
                         <div class="code-header">
@@ -218,18 +221,17 @@
                 </section>
 
                 <!-- Quick Start Section -->
-                <section id="quick-start">
-                    <h11>Quick Start</h11>
+                <section >
+                    <h12 id="quick-start">Quick Start</h12>
                     <p>Here's how to get up and running quickly:</p>
                     
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">javascript</span>
-        <button class="copy-btn" data-copy="import MyLibrary from 'my-docs-library';\n\nconst instance = new MyLibrary({\n  theme: 'dark',\n  responsive: true\n});\n\ninstance.init();">Copy</button>
+                            <button class="copy-btn" data-copy="import MyLibrary from 'my-docs-library';\n\nconst instance = new MyLibrary({\n  theme: 'dark',\n  responsive: true\n});\n\ninstance.init();">Copy</button>
                         </div>
-<pre>
-<code>
-import MyLibrary from 'my-docs-library';
+                    <pre><code>import MyLibrary from 'my-docs-library';
+
 const instance = new MyLibrary({
   theme: 'dark',
   responsive: true
@@ -241,7 +243,7 @@ instance.init();</code></pre>
 
                 <!-- Diagram Syntax Sections -->
                 <section id="flowchart">
-                    <h11>Flowchart</h11>
+                    <h12>Flowchart</h12>
                     <p>Create beautiful flowcharts using simple syntax:</p><a data-v25abc=""
                                                                 class="VPLink link link" href="./syntax/flowchart.html"><p data-v25abc=""
                                                                 class="text">Flowchart</p></a>
@@ -261,7 +263,7 @@ instance.init();</code></pre>
                 </section>
 
                 <section id="sequence-diagram">
-                    <h11>Sequence Diagram</h11>
+                    <h12>Sequence Diagram</h12>
                     <p>Document interactions between different components:</p><a data-v25abc=""
                                                         class="VPLink link link" href="./syntax/sequenceDiagram.html"><p data-v25abc=""
                                                         class="text">Sequence Diagram</p></a>
@@ -279,12 +281,12 @@ instance.init();</code></pre>
                     </div>
                 </section>
 
-                <section id="class-diagram">
-                    <h11>Class Diagram</h11>
-                    <p>Model your application's structure with class diagrams:</p><a data-v25abc=""
-                                                                class="VPLink link link" href="./syntax/classDiagram.html"><p data-v25abc=""
-                                                                class="text"> Class Diagram</p>
-                                                                </a>
+                <section >
+                    <h12 id="class-diagram">Class Diagram</h12>
+                    <p>Model your application's structure with class diagrams:</p>
+                    <a data-v25abc="" class="VPLink link link" href="./syntax/classDiagram.html"><p data-v25abc=""
+                        class="text"> Class Diagram</p>
+                    </a>
                     
                     <div class="code-block">
                         <div class="code-header">
@@ -300,15 +302,22 @@ instance.init();</code></pre>
         +bark()
     }
     Animal <|-- Dog</code></pre>
-                    </div><a data-v25abc=""
-                                                                    class="VPLink link link" href="./syntax/packet.html"><p data-v25abc=""
-                                                                    class="text">Packet 🔥</p>
-                                                                    </a>
+            </div>
+                    <h12 id="packet">Packet</h12>
+                    <p>Model your application's structure with Packet:</p>
+                    <a data-v25abc="" class="VPLink link link" href="./syntax/packet.html"><p data-v25abc=""
+                        class="text">Packet 🔥</p>
+                    </a>
+                    <h12 id="examples">Other Examples</h12>
+                    <p>Model your application's structure with Other Examples:</p>
+                    <a data-v25abc="" class="VPLink link link" href="./syntax/Other Examples.html"><p data-v25abc=""
+                        class="text">Other Examples 🔥</p>
+                    </a>
                 </section>
 
                 <!-- Configuration Sections -->
                 <section id="basic-config">
-                    <h11>Basic Configuration</h11>
+                    <h12>Basic Configuration</h12>
                     <p>Configure Yougems with these basic options:</p>
                     
                     <div class="code-block">
@@ -322,13 +331,11 @@ instance.init();</code></pre>
   "autoResize": true,
   "showGrid": false
 }</code></pre>
-                    </div><a data-v25abc=""
-                                                                class="VPLink link link" href="./syntax/examples.html"><p data-v25abc=""
-                                                                class="text">Other Examples</p></a>
+                    </div>
                 </section>
 
-                <section id="advanced-config">
-                    <h11>Advanced Settings</h11>
+                <section>
+                    <h12 id="advanced-config">Advanced Settings</h12>
                     <p>For more complex use cases, explore these advanced configuration options:</p>
                     
                     <h12 id="config-options">Configuration Options</h12>
@@ -341,8 +348,8 @@ instance.init();</code></pre>
                     </ul>
                 </section>
 
-                <section id="themes">
-                    <h11>Themes</h11>
+                <section>
+                    <h12 id="themes">Themes</h12>
                     <p>Customize the appearance with built-in themes or create your own:</p>
                     
                     <h12>Available Themes</h12>
@@ -355,8 +362,8 @@ instance.init();</code></pre>
                 </section>
 
                 <!-- API Reference Sections -->
-                <section id="methods">
-                    <h11>API Methods</h11>
+                <section>
+                    <h12 id="methods">API Methods</h12>
                     <p>Complete reference of all available methods in the API:</p>
                     
                     <h12>Core Methods</h12>
@@ -368,8 +375,8 @@ instance.init();</code></pre>
                     </ul>
                 </section>
 
-                <section id="events">
-                    <h11>Events</h11>
+                <section>
+                    <h12 id="events">Events</h12>
                     <p>Event system documentation and usage examples:</p>
                     
                     <h12>Available Events</h12>
@@ -381,8 +388,8 @@ instance.init();</code></pre>
                     </ul>
                 </section>
 
-                <section id="properties">
-                    <h11>Properties</h11>
+                <section>
+                    <h12 id="properties">Properties</h12>
                     <p>All configurable properties and their default values:</p>
                     
                     <table>
@@ -412,8 +419,8 @@ instance.init();</code></pre>
                 </section>
 
                 <!-- Ecosystem Sections -->
-                <section id="yougems-chart">
-                    <h11>Yougems Chart</h11>
+                <section>
+                    <h12 id="yougems-chart">Yougems Chart</h12>
                     <p>Integrate Yougems with popular charting libraries:</p>
                     
                     <h12>Supported Libraries</h12>
@@ -424,8 +431,8 @@ instance.init();</code></pre>
                     </ul>
                 </section>
 
-                <section id="tutorials">
-                    <h11>Tutorials</h11>
+                <section>
+                    <h12 id="tutorials">Tutorials</h12>
                     <p>Step-by-step guides to help you get the most out of Yougems:</p>
                     
                     <h12>Beginner Tutorials</h12>
@@ -442,8 +449,8 @@ instance.init();</code></pre>
                 </section>
 
                 <!-- Deployment and Configuration Sections -->
-                <section id="configuration">
-                    <h11>Configuration</h11>
+                <section>
+                    <h12 id="configuration">Configuration</h12>
                     <p>Learn how to configure Yougems for your project:</p>
                     
                     <h12>Basic Configuration</h12>
@@ -461,8 +468,8 @@ instance.init();</code></pre>
                     </div>
                 </section>
 
-                <section id="api-usage">
-                    <h11>API-Usage</h11>
+                <section>
+                    <h12 id="api-usage">API-Usage</h12>
                     <p>Understand how to use the Yougems API effectively:</p>
                     
                     <h12>Making API Calls</h12>
@@ -479,8 +486,8 @@ instance.init();</code></pre>
                     </div>
                 </section>
 
-                <section id="yougems-api-configuration">
-                    <h11>Yougems API Configuration</h11>
+                <section>
+                    <h12 id="yougems-api-configuration">Yougems API Configuration</h12>
                     <p>Configure the Yougems API settings:</p>
                     
                     <h12>API Key</h12>
@@ -497,8 +504,8 @@ instance.init();</code></pre>
                     </div>
                 </section>
 
-                <section id="yougems-configuration-options">
-                    <h11>Yougems Configuration Options</h11>
+                <section>
+                    <h12 id="yougems-configuration-options">Yougems Configuration Options</h12>
                     <p>Explore the available configuration options for Yougems:</p>
                     
                     <h12>Common Options</h12>
@@ -508,8 +515,8 @@ instance.init();</code></pre>
                     </ul>
                 </section>
 
-                <section id="faq">
-                    <h11>FAQ</h11>
+                <section>
+                    <h12 id="faq">FAQ</h12>
                     <p>Frequently asked questions about Yougems:</p>
                     
                     <h12>General Questions</h12>
@@ -520,11 +527,11 @@ instance.init();</code></pre>
                 </section>
 
                 <!-- Contributing Sections -->
-                <section id="contributing-overview">
-                    <h11>Contributing to Yougems</h11>
+                <section >
+                    <h12 id="contributing-to">Contributing to Yougems</h12>
                     <p>Learn how to contribute to the Yougems project:</p>
                     
-                    <h12>Getting Started</h12>
+                    <h12>Getting Started with contributing to YouGems</h12>
                     <p>Follow these steps to get started with contributing:</p>
                     
                     <div class="code-block">
@@ -538,21 +545,21 @@ npm install</code></pre>
                     </div>
                 </section>
 
-                <section id="adding-diagrams">
-                    <h11>Adding Diagrams</h11>
-                    <p>Contribute your diagrams to the Yougems project:</p>
-                    
-                    <h12>Diagram Guidelines</h12>
-                    <p>Follow these guidelines when creating diagrams:</p>
-                    <ul>
-                        <li>Use clear and descriptive labels</li>
-                        <li>Keep diagrams simple and focused</li>
-                        <li>Ensure diagrams are responsive</li>
-                    </ul>
+                <section >
+                        <h12 id="adding-diagrams">Adding Diagrams</h12>
+                        <p>Contribute your diagrams to the Yougems project:</p>
+                        
+                        <h12>Diagram Guidelines</h12>
+                        <p>Follow these guidelines when creating diagrams:</p>
+                        <ul>
+                            <li>Use clear and descriptive labels</li>
+                            <li>Keep diagrams simple and focused</li>
+                            <li>Ensure diagrams are responsive</li>
+                        </ul>
                 </section>
 
-                <section id="questions-and-suggestions">
-                    <h11>Questions and Suggestions</h11>
+                <section >
+                    <h12 id="questions-and-suggestions">Questions and Suggestions</h12>
                     <p>We welcome your questions and suggestions:</p>
                     
                     <h12>Contact Us</h12>
@@ -563,10 +570,10 @@ npm install</code></pre>
                     </ul>
                 </section>
 
-                <section id="security">
-                    <h11>Security</h11>
+                <section >
+                    <h12 id="security">Security</h12>
                     <p>Your security is important to us:</p>
-                    
+                     
                     <h12>Reporting Vulnerabilities</h12>
                     <p>If you discover a security vulnerability, please report it:</p>
                     
@@ -591,7 +598,7 @@ npm install</code></pre>
 
                 <!-- News Sections -->
                 <section id="announcements">
-                    <h11>Announcements</h11>
+                    <h12>Announcements</h12>
                     <p>Stay updated with the latest announcements:</p>
                     
                     <h12>Version 2.0 Released</h12>
@@ -604,7 +611,7 @@ npm install</code></pre>
                 </section>
 
                 <section id="blog">
-                    <h11>Blog</h11>
+                    <h12>Blog</h12>
                     <p>Read the latest blog posts:</p>
                     
                     <h12>Introducing Yougems 2.0</h12>
@@ -637,27 +644,19 @@ npm install</code></pre>
                     <li><a href="#properties">Properties</a></li>
                     <li><a href="#yougems-chart">Yougems Chart</a></li>
                     <li><a href="#tutorials">Tutorials</a></li>
-                    <li><a href="#contributing">Contributing</a></li>
+                    <li><a href="#contributing-to">Contributing</a></li>
                     <li><a href="#security">Security</a></li>
                     <li><a href="#announcements">Announcements</a></li>
                     <li><a href="#blog">Blog</a></li>
                 </ul>
             </nav>
         </aside>
-    </div> <!-- End of .layout -->
-
-    <!-- Add back missing elements -->
-    
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-overlay" id="mobile-overlay"></div>
-    
+    </div>
+     <!-- End of .layout -->
     <!-- Loading Indicator -->
     <div class="loading" id="loading">
         <div class="spinner"></div>
     </div>
-
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Image Gallery Section -->
     <section class="image-gallery">
