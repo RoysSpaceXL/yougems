@@ -62,7 +62,8 @@ body {
 
     section{
         width: auto;
-        height: auto;
+        height: auto; border-collapse: collapse;
+    
         border: 3px solid greenyellow;
         padding: 5px;
         }
@@ -71,7 +72,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: auto;
-        height: auto;
+        height: auto; border-collapse: collapse;
         border: 3px solid greenyellow;
         padding: 5px;
         display: flex;
@@ -81,8 +82,8 @@ body {
         }
 
     .item{
-        width: 80%;
-        height: auto;
+        width: auto;
+        height: auto; 
         border: 5px solid yellow;
         border-radius: 10px;   
         background-color:rgb(151, 141, 141) ;
@@ -130,8 +131,8 @@ body {
 :root {
     --primary-color: #2563eb;
     --secondary-color: #64748b;
-    --background-color: #ffffff;
-    --surface-color: #f8fafc;
+    --background-color: #ffe7e7;
+    --surface-color: #b3d3f3;
     --text-primary: #1e293b;
     --text-secondary: #64748b;
     --border-color: #e2e8f0;
@@ -140,7 +141,7 @@ body {
     
     --sidebar-width: 250px;
     --toc-width: 250px;
-    --header-height: 45px; /* Make sure this matches your actual header height */
+    --header-height: 65px; /* Make sure this matches your actual header height */
     --mobile-breakpoint: 768px;
     --scroll-offset: calc(var(--header-height) + 5px); /* Add extra 20px buffer */
     
@@ -192,14 +193,14 @@ body {
 .nav-header {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 5px;
     right: 5px;
     border: 5px solid red; /* See the actual header size */
     height: var(--header-height);
     background-color: var(--surface-color);
     border-bottom: 1px solid var(--border-color);
     z-index: 100;
-    backdrop-filter: blur(8px);
+  /*  backdrop-filter: blur(8px);*/
 }
 
 .nav-container {
@@ -221,8 +222,8 @@ body {
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
 }
 
 .brand-text {
@@ -605,7 +606,58 @@ li {
     margin-bottom: 0.5rem;
     color: var(--text-primary);
 }
+/* Table Styles - Add this section to your CSS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+thead {
+    background-color: var(--background-color);
+}
+
+th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-primary);
+    background-color: var(--surface-color);
+    border-bottom: 2px solid var(--border-color);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+td {
+    padding: 0.75rem 1rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.875rem;
+}
+
+tbody tr:hover {
+    background-color: var(--background-color);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.75rem;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+    }
+}
 /* Code Blocks */
 .code-block {
     margin: 1.5rem 0;
@@ -671,7 +723,7 @@ code {
     overflow-y: auto;
     transform: translate(-10%);
     transition: opacity .5s, transform .25s ease;
-    overscroll-behavior: contain;
+ /*   overscroll-behavior: contain;*/
 }
 
 .toc-header h14 {
@@ -810,12 +862,12 @@ code {
     }
 }
 
-/* Smooth Animations */
+/* Smooth Animations
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--border-color) transparent;
 }
-
+ */
 *::-webkit-scrollbar {
     width: 6px;
     height: 6px;

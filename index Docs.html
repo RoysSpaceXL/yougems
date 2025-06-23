@@ -24,7 +24,7 @@
     <header class="nav-header" id="header">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="./samples/logo.svg" alt="Logo" class="logo">
+                <img src="./src/xlogo.png" alt="Logo" class="logo">
                 <span class="brand-text">My Docs</span>
             </div>
             
@@ -142,8 +142,6 @@
                     <ul class="nav-list" id="ecosystem">
                         <li><a href="#yougems-chart" class="nav-item">Yougems Chart</a></li>
                         <li><a href="#tutorials" class="nav-item">Tutorials</a></li>
-                        <li><a href="#integrations-community" class="nav-item">Integrations - Community</a></li>
-                        <li><a href="#integrations-create" class="nav-item">Integrations - Create</a></li>
                     </ul>
                 </div>
 
@@ -180,7 +178,10 @@
             <article class="article">
                 <!-- Existing content -->
                 <section ><h12 id="introduction">Introduction</h12>
-                    <p>Welcome to our comprehensive documentation. This site demonstrates a fully functional documentation layout without using frameworks like VitePress or Vue.js.</p>
+                    <div id="markdown-content1">1</div>
+                    <script>loadMarkdownSection('../README.md', 'Introduction To YouGems', 'markdown-content1');</script>
+                    <p>Yougems is a powerful documentation and diagramming library designed to help developers create interactive and visually appealing documentation. It supports various diagram types, including flowcharts, sequence diagrams, and class diagrams, making it easy to visualize complex concepts.</p>
+
                     
                     <h12 id="features">Key Features</h12>
                     <ul>
@@ -193,12 +194,10 @@
                     </ul>
                 </section>
 
-                <!-- ADD BACK THE MISSING SECTIONS -->
-                
                 <!-- About Yougems Section -->
                 <section ><h12 id="about-yougems">About Yougems</h12>
-                    <p>Yougems is a comprehensive documentation and diagramming solution that provides powerful tools for creating interactive documentation, flowcharts, sequence diagrams, and more.</p><a data-v25abc=""                                                            class="VPLink link link" href="./intro/About-Yougems.html"><p data-v25abc=""class="text">About Yougems</p></a>
-                    
+                    <p>Yougems is a comprehensive documentation and diagramming solution that provides powerful tools for creating interactive documentation, flowcharts, sequence diagrams, and more.</p><a data-v25abc="" class="VPLink link link" href="./intro/About-Yougems.html"><p data-v25abc=""class="text">About Yougems</p></a>
+
                     <h12>What is Yougems?</h12>
                     <p>Yougems combines the power of markdown documentation with advanced diagramming capabilities, making it easy to create professional documentation that includes visual elements.</p>
                         <a data-v25abc="" class="VPLink link link" href="./intro/getting-started.html"><p       data-v25abc="" class="text">Intro Getting Started</p>
@@ -207,8 +206,32 @@
 
                 <!-- Installation Section -->
                 <section >                    
-                    <h12 id="installation">Installation</h12>
-                    <p>Get started by following these simple installation steps:</p>
+                    <h12 id="installation">Installation as example</h12>
+                    <p>Get started by following these simple installation steps:<br>Purpose:<br> Shows users how to implement Yougems immediately after installation.
+
+                    Structure:<br>
+
+                    Section container with quick-start heading and anchor ID<br>
+                    Action-oriented introduction promising rapid setup<br>
+                    Code block featuring:<br>
+                    JavaScript language indicator<br>
+                    More complex copy button with escaped newlines (\n)<br>
+                    Multi-line code example showing import, configuration, and initialization<br>
+                    How They Work Together<br>
+                    These sections create a linear workflow:<br><br>
+
+                    Install the package (Installation section)<br>
+                    Implement basic usage (Quick Start section)<br>
+                    Key Features<br>
+                    Interactive Elements:<br><br>
+
+                    Copy buttons with data-copy attributes for one-click copying<br>
+                    Proper syntax highlighting preparation with language indicators<br><br>
+                    User Experience:<br><br>
+
+                    Minimal friction from installation to working code<br>
+                    Clear visual separation between terminal commands and JavaScript code<br>
+                    Progressive complexity (simple install → basic implementation)</p>
 
                     
                     <div class="code-block">
@@ -251,7 +274,12 @@ instance.init();</code></pre>
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">mermaid</span>
-                            <button class="copy-btn">Copy</button>
+                            <button class="copy-btn" data-copy="flowchart TD
+    A[Start] --> B{Decision?}
+    B -->|Yes| C[Action 1]
+    B -->|No| D[Action 2]
+    C --> E[End]
+    D --> E">Copy</button>
                         </div>
                         <pre><code>flowchart TD
     A[Start] --> B{Decision?}
@@ -271,7 +299,11 @@ instance.init();</code></pre>
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">mermaid</span>
-                            <button class="copy-btn">Copy</button>
+                            <button class="copy-btn" data-copy="sequenceDiagram
+    participant A as Alice
+    participant B as Bob
+    A->>B: Hello Bob, how are you?
+    B-->>A: Great!">Copy</button>
                         </div>
                         <pre><code>sequenceDiagram
     participant A as Alice
@@ -291,7 +323,15 @@ instance.init();</code></pre>
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">mermaid</span>
-                            <button class="copy-btn">Copy</button>
+                            <button class="copy-btn" data-copy="classDiagram
+    class Animal {
+        +String name
+        +makeSound()
+    }
+    class Dog {
+        +bark()
+    }
+    Animal <|-- Dog">Copy</button>
                         </div>
                         <pre><code>classDiagram
     class Animal {
@@ -323,13 +363,11 @@ instance.init();</code></pre>
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">json</span>
-                            <button class="copy-btn">Copy</button>
+                            <button class="copy-btn" data-copy='{"theme": "light","responsive": true}'>Copy</button>
                         </div>
                         <pre><code>{
   "theme": "light",
-  "responsive": true,
-  "autoResize": true,
-  "showGrid": false
+  "responsive": true
 }</code></pre>
                     </div>
                 </section>
@@ -448,25 +486,6 @@ instance.init();</code></pre>
                     </ul>
                 </section>
 
-                <!-- Deployment and Configuration Sections -->
-                <section>
-                    <h12 id="configuration">Configuration</h12>
-                    <p>Learn how to configure Yougems for your project:</p>
-                    
-                    <h12>Basic Configuration</h12>
-                    <p>Start with these basic configuration options:</p>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span class="code-language">json</span>
-                            <button class="copy-btn">Copy</button>
-                        </div>
-                        <pre><code>{
-  "theme": "light",
-  "responsive": true
-}</code></pre>
-                    </div>
-                </section>
 
                 <section>
                     <h12 id="api-usage">API-Usage</h12>
@@ -478,7 +497,7 @@ instance.init();</code></pre>
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">javascript</span>
-                            <button class="copy-btn">Copy</button>
+                            <button class="copy-btn" data-copy='fetch("https://api.yougems.com/v1/docs").then(response => response.json()).then(data => console.log(data));'>Copy</button>
                         </div>
                         <pre><code>fetch('https://api.yougems.com/v1/docs')
   .then(response => response.json())
@@ -496,7 +515,7 @@ instance.init();</code></pre>
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">json</span>
-                            <button class="copy-btn">Copy</button>
+                            <button class="copy-btn" data-copy='{"apiKey": "YOUR_API_KEY"}'>Copy</button>
                         </div>
                         <pre><code>{
   "apiKey": "YOUR_API_KEY"
@@ -537,7 +556,9 @@ instance.init();</code></pre>
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">bash</span>
-                            <button class="copy-btn">Copy</button>
+                            <button class="copy-btn" data-copy='git clone https://github.com/your-repo/yougems.git
+cd yougems
+npm install'>Copy</button>
                         </div>
                         <pre><code>git clone https://github.com/your-repo/yougems.git
 cd yougems
@@ -580,7 +601,15 @@ npm install</code></pre>
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-language">markdown</span>
-                            <button class="copy-btn">Copy</button>
+                            <button class="copy-btn" data-copy='**Security Vulnerability Report**
+
+**Description:** [Provide a brief description of the vulnerability]
+
+**Steps to Reproduce:** [Detail the steps to reproduce the vulnerability]
+
+**Impact:** [Explain the potential impact of the vulnerability]
+
+**Mitigation:** [Suggest mitigations or fixes]'>Copy</button>
                         </div>
                         <pre><code>**Security Vulnerability Report**
 
@@ -683,7 +712,7 @@ npm install</code></pre>
 
 </div> <!-- End of #app -->
 <div id="markdown-content">5</div>
-<script>loadMarkdownSection('../README.md', 'YouGems', 'markdown-content');</script>
+<script>loadMarkdownSection('../README.md', 'Introduction To YouGems', 'markdown-content1');</script>
 
 note 1: <br>notes are .. , ..,<br> 
 note 2: <br>  ..  <br>
