@@ -264,7 +264,7 @@ class DocumentationSite {
         let current = element;
         while (current.previousElementSibling) {
             current = current.previousElementSibling;
-            if (current.matches('h1, h2, h3, h4, h5, h6') && current.id) {
+            if (current.matches('h1, h11, h2, h12, h3, h13, h4, h5, h6') && current.id) {
                 return current;
             }
         }

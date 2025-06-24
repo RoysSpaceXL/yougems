@@ -28,9 +28,11 @@ body {
     h1{
         margin-top: 45px;
         margin-left: 19%;
-        width: 61%;
+        width: 71%;
         text-align: center;
-        border: 1px solid black;
+        border: 1px solid black;        
+        background-color:rgb(151, 141, 141) ;
+
     }
 
     h2{
@@ -39,6 +41,8 @@ body {
         height: fit-content;        
         text-align: center;
         border: 2px dashed black;
+        background-color:rgb(151, 141, 141) ;
+
     }
 
     h3{
@@ -139,8 +143,8 @@ body {
     --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
     
-    --sidebar-width: 250px;
-    --toc-width: 250px;
+    --sidebar-width: 225px;
+    --toc-width: 225px;
     --header-height: 65px; /* Make sure this matches your actual header height */
     --mobile-breakpoint: 768px;
     --scroll-offset: calc(var(--header-height) + 5px); /* Add extra 20px buffer */
@@ -449,7 +453,7 @@ body {
 .sidebar {
     position: fixed;
     top: var(--header-height);
-    left: 5px;
+    left: 10px;
     width: var(--sidebar-width);
     height: calc(100vh - var(--header-height));
     background-color: var(--surface-color);
@@ -463,7 +467,7 @@ body {
 
 .main-content {
     grid-column: 2;
-    background: lightgreen;
+    background-color:rgb(151, 141, 141) ;
     padding: 5px;
     max-width: none;
     overflow-x: hidden;
@@ -488,7 +492,7 @@ body {
 }
 
 .nav-section-title {
-    display: flex;border: 3px solid red;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 0.875rem;
@@ -565,7 +569,7 @@ h11, h12, h13, h14, h15, h16 {
     font-weight: 600;
     line-height: 1.25;
     margin-bottom: 1rem;
-    scroll-margin-top: calc(var(--header-height) + 1rem);
+    scroll-margin-top: calc(var(--header-height) + 5px);
 }
 
 h11 {
@@ -716,7 +720,7 @@ code {
 .toc {
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: -10px;
     width: var(--toc-width);
     height: calc(100vh - var(--header-height));
     padding: 1.5rem 1rem;
