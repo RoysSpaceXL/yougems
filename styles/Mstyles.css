@@ -27,8 +27,8 @@ body {
 }
     h1{
         margin-top: 45px;
-        margin-left: 19%;
-        width: 71%;
+        margin-left: 17%;
+        width: 73%;
         text-align: center;
         border: 1px solid black;        
         background-color:rgb(151, 141, 141) ;
@@ -202,7 +202,7 @@ body {
     border: 5px solid red; /* See the actual header size */
     height: var(--header-height);
     background-color: var(--surface-color);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 5px solid var(--border-color);
     z-index: 100;
   /*  backdrop-filter: blur(8px);*/
 }
@@ -210,29 +210,30 @@ body {
 .nav-container {
     max-width: 100%;
     height: auto;
-    padding: 0 1rem;
+    padding: 0 0.25rem;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.nav-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    text-decoration: none;
-}
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        text-decoration: none;
+    }
 
-.logo {
-    width: 64px;
-    height: 64px;
-}
+        .logo {
+            width: fit-content;
+            width: 60px;
+            height: 60px;
+        }
 
-.brand-text {
-    font-size: 1.25rem;
-}
+        .brand-text {
+            font-size: 1.25rem;
+        }
 
 /* Search */
 .search-container {
@@ -488,7 +489,7 @@ body {
 }
 
 .nav-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .nav-section-title {
@@ -498,7 +499,7 @@ body {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     padding: 0.5rem 0;
 }
 
@@ -573,21 +574,21 @@ h11, h12, h13, h14, h15, h16 {
 }
 
 h11 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 h12 {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-left: auto;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.1rem;
+    border-bottom: 3px solid var(--border-color);
 }
 
 h13 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-top: 1.5rem;
 }
 
@@ -597,12 +598,14 @@ h14 {
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
     color: var(--text-primary);
 }
 
 ul, ol {
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     padding-left: 1.5rem;
 }
 
@@ -738,7 +741,7 @@ code {
 }
 
 .toc-nav {
-    border-left: 1px solid var(--border-color);
+    border-left: 3px solid var(--border-color);
 }
 
 .toc-nav ul {
@@ -758,7 +761,7 @@ code {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.875rem;
-    border-left: 2px solid transparent;
+    border-left: 3px solid transparent;
     transition: var(--transition);
 }
 
