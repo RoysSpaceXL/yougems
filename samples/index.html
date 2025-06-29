@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documentation Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header Navigation -->
+    <header class="nav-header" id="header">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="logo.svg" alt="Logo" class="logo">
+                <span class="brand-text">My Docs</span>
+            </div>
+            
+            <!-- Search -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search documentation..." aria-label="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20">
+                            <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-results" id="search-results"></div>
+            </div>
+            
+            <!-- Main Navigation -->
+            <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+                <a href="#" class="nav-link active">Docs</a>
+                <a href="#" class="nav-link">Tutorials</a>
+                <a href="#" class="nav-link">Examples</a>
+                <a href="#" class="nav-link">API</a>
+            </nav>
+            
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    
+    <!-- Main Layout -->
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav" role="navigation" aria-label="Sidebar navigation">
+                <div class="nav-section">
+                    <h3 class="nav-section-title">
+                        📚 Getting Started
+                        <button class="nav-toggle" data-section="getting-started">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h3>
+                    <ul class="nav-list" id="getting-started">
+                        <li><a href="#introduction" class="nav-item active">Introduction</a></li>
+                        <li><a href="#installation" class="nav-item">Installation</a></li>
+                        <li><a href="#quick-start" class="nav-item">Quick Start</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">
+                        🔧 Configuration
+                        <button class="nav-toggle" data-section="configuration">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h3>
+                    <ul class="nav-list" id="configuration">
+                        <li><a href="#basic-config" class="nav-item">Basic Configuration</a></li>
+                        <li><a href="#advanced-config" class="nav-item">Advanced Settings</a></li>
+                        <li><a href="#themes" class="nav-item">Themes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">
+                        📖 API Reference
+                        <button class="nav-toggle" data-section="api">
+                            <span class="chevron">▶</span>
+                        </button>
+                    </h3>
+                    <ul class="nav-list" id="api">
+                        <li><a href="#methods" class="nav-item">Methods</a></li>
+                        <li><a href="#events" class="nav-item">Events</a></li>
+                        <li><a href="#properties" class="nav-item">Properties</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="content" id="main-content">
+            <article class="article">
+                <h1 id="introduction">Introduction</h1>
+                <p>Welcome to our comprehensive documentation. This site demonstrates a fully functional documentation layout without using frameworks like VitePress or Vue.js.</p>
+                
+                <h2 id="features">Key Features</h2>
+                <ul>
+                    <li>Responsive design with mobile-first approach</li>
+                    <li>Dark/Light theme switching</li>
+                    <li>Client-side search functionality</li>
+                    <li>Auto-generated table of contents</li>
+                    <li>Collapsible sidebar navigation</li>
+                    <li>Performance optimizations</li>
+                </ul>
+                
+                <h2 id="installation">Installation</h2>
+                <p>Get started by following these simple installation steps:</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">bash</span>
+                        <button class="copy-btn" data-copy="npm install my-docs-library">Copy</button>
+                    </div>
+                    <pre><code>npm install my-docs-library</code></pre>
+                </div>
+                
+                <h2 id="quick-start">Quick Start</h2>
+                <p>Here's how to get up and running quickly:</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">javascript</span>
+                        <button class="copy-btn" data-copy="import MyLibrary from 'my-docs-library';\n\nconst instance = new MyLibrary({\n  theme: 'dark',\n  responsive: true\n});\n\ninstance.init();">Copy</button>
+                    </div>
+                    <pre><code>import MyLibrary from 'my-docs-library';
+
+const instance = new MyLibrary({
+  theme: 'dark',
+  responsive: true
+});
+
+instance.init();</code></pre>
+                </div>
+                
+                <h2 id="basic-config">Basic Configuration</h2>
+                <p>Configure the library with these basic options:</p>
+                
+                <h3 id="config-options">Configuration Options</h3>
+                <p>Available configuration parameters and their usage.</p>
+                
+                <h2 id="advanced-config">Advanced Settings</h2>
+                <p>For more complex use cases, explore these advanced configuration options.</p>
+                
+                <h2 id="themes">Themes</h2>
+                <p>Customize the appearance with built-in themes or create your own.</p>
+                
+                <h2 id="methods">API Methods</h2>
+                <p>Complete reference of all available methods in the API.</p>
+                
+                <h2 id="events">Events</h2>
+                <p>Event system documentation and usage examples.</p>
+                
+                <h2 id="properties">Properties</h2>
+                <p>All configurable properties and their default values.</p>
+            </article>
+        </main>
+        
+        <!-- Table of Contents -->
+        <aside class="toc" id="toc">
+            <div class="toc-header">
+                <h4>On this page</h4>
+            </div>
+            <nav class="toc-nav" id="toc-nav" role="navigation" aria-label="Table of contents">
+                <!-- TOC will be auto-generated by JavaScript -->
+            </nav>
+        </aside>
+    </div>
+    
+    <!-- Loading Indicator -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- Service Worker Registration Script -->
+    <script>
+    // Manual service worker registration with better error handling
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', async () => {
+            try {
+                const registration = await navigator.serviceWorker.register('/sw.js');
+                console.log('✅ Service Worker registered successfully');
+                
+                // Listen for updates
+                registration.addEventListener('updatefound', () => {
+                    console.log('🔄 Service Worker update found');
+                    const newWorker = registration.installing;
+                    
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            console.log('🆕 New content available, refresh to update');
+                            // You could show a notification to user here
+                        }
+                    });
+                });
+                
+            } catch (error) {
+                console.log('❌ Service Worker registration failed:', error);
+            }
+        });
+    } else {
+        console.log('❌ Service Workers not supported');
+    }
+    </script>
+</body>
+</html>
