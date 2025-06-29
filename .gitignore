@@ -40,6 +40,9 @@ coverage/
 # Temporary files
 tmp/
 
+# Archive files
+archive/
+
 # Backup files
 *.bak
 *copy*.md
