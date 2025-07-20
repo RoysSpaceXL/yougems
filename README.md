@@ -71,7 +71,22 @@ The CNAME record should always point to <user>.github.io or <organization>.githu
 For more information about how to create the correct record, see your DNS provider's documentation. 
 For more information about the default domain for your site, see What is GitHub Pages?
 
-# 8 Sources
+# 8 References
+
+https://roysspacexl.github.io/YouGems/ 
+https://roysspacexl.github.io/PlayGround/   
+
+https://roysspacexl.github.io/PlayGround/0Baseline
+https://roysspacexl.github.io/PlayGround/1Rookie/   
+https://roysspacexl.github.io/PlayGround/2Arcade/   
+
+https://roysspacexl.github.io/0Baseline/   
+https://roysspacexl.github.io/1Rookie/
+https://roysspacexl.github.io/2Arcade/
+
+
+
+# 9 Sources
 
 Tensor Art Website; https://tensor.art/models  
 Genspark;           https://www.genspark.ai/  
